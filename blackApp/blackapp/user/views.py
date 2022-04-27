@@ -354,14 +354,6 @@ class Grade_Class_Info:
         except IntegrityError:
             return JsonResponse({'stata':'fall','code':'1','msg':'班级已经存在！'},status = 500)
 
-
-
-
-
-
-        GradeClassInfo(gradeName = gradeName,className = className, teacherMain = teacher, 
-        yuwen = teacher_yw, shuxue = teacher_sx, waiyu = teacher_wy, wuli = teacher_wl, huaxue = teacher_hx, shenwu = teacher_sw, lishi = teacher_ls, zhengzhi = teacher_zz, 
-        dili = teacher_dl, xinxijishu = teacher_xxjs).save()
         
 
         res = {
