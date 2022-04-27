@@ -104,5 +104,7 @@ class Notices(models.Model):
     title = models.TextField(verbose_name='消息标题')
     notitype = models.TextField(verbose_name='消息类型',default='notification')
 
+#
+
 
 
