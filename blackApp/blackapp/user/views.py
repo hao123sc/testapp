@@ -345,6 +345,7 @@ class Grade_Class_Info:
         
         # if GradeClassInfo.objects.filter(gradeName = gradeName,className = className).count():
         #     return JsonResponse({'stata':'fall','code':'1','msg':'班级已经存在！'},status = 500)
+        #
 
         try:
             GradeClassInfo(gradeName = gradeName,className = className, teacherMain = teacher, 
